@@ -1,0 +1,62 @@
+/* styles.css */
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    overflow: hidden;
+}
+
+.logo-container {
+    margin-bottom: 20px;
+}
+
+#logo {
+    max-height: 190px; /* Adjust as needed to enlarge the logo */
+    max-width: 100%; /* Ensure it doesn't exceed the container width */
+}
+
+.calendar {
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    overflow: hidden;
+    width: 90%;
+    height: 80%;
+    max-width: 1200px;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    background: #f4f4f4;
+    border-bottom: 1px solid #ccc;
+    flex: 0 1 auto;
+}
+
+.weekdays, .days {
+    display: flex;
+    flex-wrap: wrap;
+    flex: 1 1 auto;
+}
+
+.weekdays div, .days div {
+    width: calc(100% / 7);
+    text-align: center;
+    padding: 10px 0;
+}
+
+.days div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    height: calc(100% / 6); /* Assuming 6 rows max */
+    border: 1px solid #eee;
+    cursor:
